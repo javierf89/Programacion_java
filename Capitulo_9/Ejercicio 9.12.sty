@@ -1,0 +1,38 @@
+ME TOCO EL EJERCICIO 9.12:
+
+
+9.12 (Uso de super en el cuerpo del método de una instancia) Explique por qué 
+usaría super en el cuerpo del método de instancia de una subclase
+
+a palabra clave super se utiliza en Java para hacer referencia a la 
+clase padre de la clase actual (subclase). Cuando se trata de métodos
+ de instancia de una subclase, se puede usar super para acceder a los 
+ miembros (métodos o variables) de la clase padre.
+
+Hay varias situaciones en las que es útil utilizar super en el cuerpo 
+del método de instancia de una subclase:
+
+Llamar al constructor de la clase padre: En el constructor de una subclase, 
+se puede usar super para llamar al constructor de la clase padre. 
+Esto es útil para reutilizar el código de inicialización de la clase padre 
+antes de agregar la inicialización específica de la subclase.
+
+Acceder a métodos o variables de la clase padre: En el cuerpo de un 
+método de instancia de una subclase, super puede usarse para acceder a 
+los métodos y variables definidos en la clase padre. Esto es especialmente 
+útil si la subclase ha sobrescrito un método de la clase padre y se necesita 
+acceder al método original de la clase padre.
+
+Evitar ambigüedades: Si una subclase hereda un método o variable con 
+el mismo nombre de la clase padre y también define su propia versión del 
+mismo, usar super permite hacer referencia explícitamente a la versión de la 
+clase padre y evitar ambigüedades.
+
+Invocar métodos heredados: Si una subclase sobrescribe un método de la clase
+ padre y desea invocar la implementación de la clase padre dentro de la
+  implementación de la subclase, puede hacerlo usando super.
+
+En resumen, super se utiliza en el cuerpo de un método de instancia de una 
+subclase para acceder y utilizar los miembros de la clase padre cuando sea
+ necesario, ya sea para reutilización de código, acceso a métodos originales 
+ de la clase padre o para evitar ambigüedades.
